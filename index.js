@@ -55,7 +55,7 @@ app.post('/update', async (req, res) => {
     };
     try { 
         await axios.post(createAnimal, newAnimal, { headers } );
-        res.redirect('back');
+        res.redirect('/');
     } catch(err) {
         console.error(err);
     }
